@@ -46,15 +46,14 @@ def info(ids, details=None):
     result = None
     additional='[]'
 
-    if details != None:
-        if details=="full":
-            additional='["description","tag","exif","resolution","orientation","gps","thumbnail","address","geocoding_id","person"]'
-        else:
-            temp1 = details.split(',')
-            temp2 = []
-            for x in temp1:
-                temp2.append('\"{}\"'.format(x))
-            additional = '[{}]'.format(','.join(temp2))
+    if details == None or details=="full":
+        additional='["description","tag","exif","resolution","orientation","gps","thumbnail","address","geocoding_id","person"]'
+    else:
+        temp1 = details.split(',')
+        temp2 = []
+        for x in temp1:
+            temp2.append('\"{}\"'.format(x))
+        additional = '[{}]'.format(','.join(temp2))
     
     PARAMS = {
         "api": "SYNO.FotoTeam.Browse.Item",

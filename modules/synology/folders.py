@@ -47,7 +47,7 @@ def items(id):
         "version" : "1",
         "method": "list",
         'folder_id': id,
-        'additional' : '["gps","description"]',
+        'additional' : '["description","tag","exif","resolution","orientation","gps","thumbnail","address","geocoding_id","person"]',
         "sort_direction": 'asc',
         'sort_by': "takentime",
         "offset": '0',

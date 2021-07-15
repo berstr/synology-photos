@@ -6,7 +6,6 @@
     export NEW_RELIC_DISTRIBUTED_TRACING_ENABLED=XXX
     export NEW_RELIC_APP_NAME=XXXX
 
-    export SYNOLOGY_FILESTATION_SERVICE = None  # <hostname>:<port>  ... not used yet
     export SYNOLOGY_HOST=XXXX  # <hostname>:<port>
     export SYNOLOGY_USERNAME = None
     export SYNOLOGY_PASSWORD = None
